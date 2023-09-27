@@ -1,3 +1,5 @@
+package org.example;
+
 public class PermissionManager {
     private PermissionLevel mCurrentLevel;
 
@@ -6,7 +8,7 @@ public class PermissionManager {
         // Set the initial value to USER
         mCurrentLevel = PermissionLevel.USER;
     }
-    // Method to get the name of the role based on the current PermissionLevel
+    // Method to get the name of the role based on the current org.example.PermissionLevel
     public String getRoleName() {
         switch (mCurrentLevel) {
             case ADMIN:
@@ -20,7 +22,7 @@ public class PermissionManager {
         }
     }
 
-    // Method to set the PermissionLevel to mCurrentLevel
+    // Method to set the org.example.PermissionLevel to mCurrentLevel
     public void setPermissionLevel(PermissionLevel newLevel) {
         mCurrentLevel = newLevel;
     }

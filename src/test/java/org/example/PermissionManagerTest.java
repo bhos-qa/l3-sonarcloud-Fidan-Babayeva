@@ -1,3 +1,7 @@
+package org.example;
+
+import org.example.PermissionLevel;
+import org.example.PermissionManager;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -5,7 +9,7 @@ public class PermissionManagerTest {
 
     @Test
     public void testGetRoleName() {
-        // Arrange: Create a PermissionManager instance with a specific PermissionLevel
+        // Arrange: Create a org.example.PermissionManager instance with a specific org.example.PermissionLevel
         PermissionManager manager = new PermissionManager();
         manager.setPermissionLevel(PermissionLevel.ADMIN);
 
@@ -18,13 +22,13 @@ public class PermissionManagerTest {
 
     @Test
     public void testSetPermissionLevel() {
-        // Arrange: Create a PermissionManager instance
+        // Arrange: Create a org.example.PermissionManager instance
         PermissionManager manager = new PermissionManager();
 
-        // Act: Call the method to set the PermissionLevel
+        // Act: Call the method to set the org.example.PermissionLevel
         manager.setPermissionLevel(PermissionLevel.DEVELOPER);
 
-        // Assert: Verify that the PermissionLevel is set correctly
+        // Assert: Verify that the org.example.PermissionLevel is set correctly
         assertEquals(PermissionLevel.DEVELOPER, manager.getCurrentLevel());
     }
 
