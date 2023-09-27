@@ -14,10 +14,10 @@ public class PermissionManagerTest {
         manager_admin.setPermissionLevel(PermissionLevel.ADMIN);
 
         PermissionManager manager_user = new PermissionManager();
-        manager_user.setPermissionLevel(PermissionLevel.ADMIN);
+        manager_user.setPermissionLevel(PermissionLevel.USER);
 
         PermissionManager manager_developer = new PermissionManager();
-        manager_developer.setPermissionLevel(PermissionLevel.ADMIN);
+        manager_developer.setPermissionLevel(PermissionLevel.DEVELOPER);
 
         // Act: Call the method you want to test
         String roleName_admin = manager_admin.getRoleName();
