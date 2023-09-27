@@ -1,5 +1,5 @@
 package org.example;
 
 public enum PermissionLevel {
-    ADMIN, DEVELOPER, USER
+    ADMIN, DEVELOPER, USER, UNKNOWN
 }

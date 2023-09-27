@@ -19,15 +19,20 @@ public class PermissionManagerTest {
         PermissionManager manager_developer = new PermissionManager();
         manager_developer.setPermissionLevel(PermissionLevel.DEVELOPER);
 
+        PermissionManager manager_unknown = new PermissionManager();
+        manager_unknown.setPermissionLevel(PermissionLevel.UNKNOWN);
+
         // Act: Call the method you want to test
         String roleName_admin = manager_admin.getRoleName();
         String roleName_user = manager_user.getRoleName();
         String roleName_developer = manager_developer.getRoleName();
+        String roleName_unknown = manager_unknown.getRoleName();
 
         // Assert: Verify the expected result
         assertEquals("Admin", roleName_admin);
         assertEquals("User", roleName_user);
         assertEquals("Developer", roleName_developer);
+        assertEquals("Unknown", roleName_unknown);
     }
 
     @Test
